@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/image_detail"
+                        android:layout_height="200dp"/>
+            <TextView
+                    android:id="@+id/news_detail_time_name"
+                    android:text="source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"/>
+            <TextView
+                    android:id="@+id/news_detail_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18sp"
+                    android:text="title"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/news_detail_author_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="title"/>
+                <View
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/news_detail_source_name"
+                        android:text="source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/news_detail_des_tv"
+                    android:text="Des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18sp"
+                    android:text="Content"/>
+
+            <TextView
+                    android:id="@+id/news_detail_content_tv"
+                    android:text="content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
