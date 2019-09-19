@@ -68,7 +68,7 @@ class NewsPresenterImpl : NewsPresenter {
         try {
             response = makeService().getNews(
                 "bitcoin",
-                "2019-08-18",
+                "2019-09-18",
                 "publishedAt",
                 "cb672b6a09e349288d96dcf552af1b13"
             ).await()
